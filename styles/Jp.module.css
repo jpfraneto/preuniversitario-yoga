@@ -1,0 +1,15 @@
+.jpcontainer {
+  padding: 8px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 888px;
+  text-align: justify;
+}
+
+.jpcontainer p {
+  margin: 8px 0;
+}
+
+.jpImageContainer {
+  text-align: center;
+}
