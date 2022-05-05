@@ -1,5 +1,7 @@
 .container {
   padding: 8px;
+  max-width: 777px;
+  margin: 0 auto;
 }
 
 .contentText p {
