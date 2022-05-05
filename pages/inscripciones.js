@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../styles/Inscripcion.module.css';
 import ciudades from '../src/data/regionesyciudades';
+import Link from 'next/link';
 
 const Inscripcion = () => {
   const [comunas, setComunas] = useState([]);
