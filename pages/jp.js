@@ -48,6 +48,14 @@ const Jp = () => {
         y ser nuestra mejor versión.
       </p>
       <p>Nos vemos el 18 de mayo cuando comience este viaje.</p>
+      <a
+        className={styles.inscripcionBtn}
+        target='_blank'
+        style={{ backgroundColor: 'lightgreen', marginRight: '8px' }}
+        href='https://wa.link/7sno14'
+      >
+        Escríbeme al whatsapp
+      </a>
       <Link href='/inscripciones'>
         <a className={styles.inscripcionBtn}>Inscribirme</a>
       </Link>
