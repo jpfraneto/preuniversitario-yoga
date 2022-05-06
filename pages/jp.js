@@ -53,6 +53,7 @@ const Jp = () => {
         target='_blank'
         style={{ backgroundColor: 'lightgreen', marginRight: '8px' }}
         href='https://wa.link/7sno14'
+        rel='noreferrer'
       >
         Escríbeme al whatsapp
       </a>

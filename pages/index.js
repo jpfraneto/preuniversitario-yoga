@@ -47,6 +47,7 @@ export default function Home() {
             target='_blank'
             style={{ backgroundColor: 'lightgreen' }}
             href='https://wa.link/7sno14'
+            rel='noreferrer'
           >
             Escríbeme al whatsapp
           </a>
