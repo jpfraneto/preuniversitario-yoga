@@ -11,7 +11,7 @@
   width: 90%;
   margin: 0 auto;
   border: solid black 2px;
-  background-color: rgba(0, 0, 0, 0.6); /* Black w/opacity/see-through */
+  background-color: var(--one); /* Black w/opacity/see-through */
   color: white;
   padding: 8px;
 }
@@ -40,9 +40,15 @@
 }
 
 .inscripcionForm button {
-  background-color: goldenrod;
+  background-color: var(--two);
   border: solid black 2px;
   padding: 8px;
   border-radius: 8px;
-  box-shadow: white 0.5px 0.5px;
+  box-shadow: black 0.5px 0.5px;
+  cursor: pointer;
+}
+
+.inscripcionForm button:hover {
+  filter: brightness(85%);
+  box-shadow: black 1px 1px;
 }

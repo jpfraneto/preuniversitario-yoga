@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/Jp.module.css';
+import Link from 'next/link';
 
 const Jp = () => {
   return (
@@ -47,6 +48,9 @@ const Jp = () => {
         y ser nuestra mejor versión.
       </p>
       <p>Nos vemos el 18 de mayo cuando comience este viaje.</p>
+      <Link href='/inscripciones'>
+        <a className={styles.inscripcionBtn}>Inscribirme</a>
+      </Link>
     </div>
   );
 };

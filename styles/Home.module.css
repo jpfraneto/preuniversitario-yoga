@@ -20,6 +20,11 @@
 .inscripcionBtn {
   border: solid black 2px;
   padding: 4px 8px;
-  background-color: bisque;
+  background-color: var(--one);
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.inscripcionBtn:hover {
+  filter: brightness(85%);
 }

@@ -21,6 +21,7 @@ const Inscripcion = () => {
         comuna: e.target.comuna.value,
         relacion: e.target.relacion.value,
         carrera: e.target.carrera.value,
+        telefono: e.target.telefono.value,
       }),
     };
     const response = await fetch(`/api/inscripcion`, reqParams);
@@ -64,6 +65,15 @@ const Inscripcion = () => {
                   type='email'
                   name='email'
                   placeholder='Correo Electrónico'
+                  required
+                />
+              </div>
+              <div>
+                <label>Teléfono Celular:</label>
+                <input
+                  type='tel'
+                  name='telefono'
+                  placeholder='Celular'
                   required
                 />
               </div>

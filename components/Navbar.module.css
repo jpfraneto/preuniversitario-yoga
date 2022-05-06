@@ -3,6 +3,7 @@
   background-color: var(--two);
   height: 58px;
   border-bottom: 1px solid black;
+  cursor: pointer;
 }
 
 .navContainer h1 {
@@ -25,7 +26,8 @@
 .secondNav {
   width: 100%;
   text-align: center;
-  background-color: var(--four);
+  color: white;
+  background-color: var(--three);
   border-bottom: 2px solid black;
   font-size: 0.7rem;
 }
