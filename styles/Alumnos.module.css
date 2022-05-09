@@ -1,0 +1,7 @@
+.alumnoContainer {
+  border: solid black 1px;
+  margin: 4px;
+  padding: 8px;
+  filter: brightness(85%);
+  width: fit-content;
+}

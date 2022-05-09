@@ -11,7 +11,7 @@ export default function Home() {
         <title>Preuniversitario Yoga</title>
         <meta
           name='description'
-          content='Avanzando en conjunto para una mejor educación mental'
+          content='Únete a la próxima nave que despega el 18 de mayo. La salud mental se construye en comunidad.'
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
