@@ -18,7 +18,7 @@ const Alumnos = ({ alumnos }) => {
     <div>
       {alumnos.map((alumno, index) => {
         return (
-          <div className={styles.alumnoContainer}>
+          <div key={alumno._id} className={styles.alumnoContainer}>
             <h3>
               {index + 1} - {alumno.nombre}
             </h3>
