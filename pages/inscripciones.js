@@ -22,6 +22,7 @@ const Inscripcion = () => {
         relacion: e.target.relacion.value,
         carrera: e.target.carrera.value,
         telefono: e.target.telefono.value,
+        date: new Date(),
       }),
     };
     const response = await fetch(`/api/inscripcion`, reqParams);
