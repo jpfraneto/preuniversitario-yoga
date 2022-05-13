@@ -38,10 +38,7 @@ export default function Home() {
             <li>Reducir el estrés.</li>
             <li>Aumentar la claridad mental.</li>
           </ul>
-          <p>
-            La siguiente despega el 18 de mayo. Inscríbete antes de que se
-            acaben los cupos!
-          </p>
+          <p>La siguiente despega el 18 de mayo.</p>
         </div>
       </div>
 
