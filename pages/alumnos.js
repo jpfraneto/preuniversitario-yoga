@@ -16,27 +16,19 @@ export async function getStaticProps({ params }) {
 const Alumnos = ({ alumnos }) => {
   return (
     <div>
-      {alumnos.map((alumno, index) => {
-        return (
-          <div key={alumno._id} className={styles.alumnoContainer}>
-            <h3>
-              {index + 1} - {alumno.nombre}
-            </h3>
-            <h4>
-              {alumno.region} - {alumno.comuna}
-            </h4>
-            <h5>{alumno.telefono}</h5>
-            <hr />
-            <h4>¿Cuál es tu relación con el yoga?</h4>
-            <p>{alumno.relacion}</p>
-            <h4>
-              ¿Cómo te sientes con respecto a la decisión de qué carrera
-              estudiar?
-            </h4>
-            <p>{alumno.carrera}</p>
-          </div>
-        );
-      })}
+      <div className={styles.alumnos}>
+        {' '}
+        {alumnos.map((alumno, index) => {
+          return (
+            <div key={alumno._id} className={styles.alumnoContainer}>
+              <h5>
+                {alumno.nombre.split(' ')[0]} - {alumno.region} -{' '}
+                {alumno.comuna}
+              </h5>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

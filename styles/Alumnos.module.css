@@ -1,7 +1,29 @@
 .alumnoContainer {
   border: solid black 1px;
   margin: 4px;
-  padding: 8px;
+  padding: 2px;
   filter: brightness(85%);
   width: fit-content;
+}
+
+.alumnos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.relacionesContainer {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.relacion {
+  width: 222px;
+  border: solid black 2px;
+  margin: 2px;
+  background-color: beige;
 }
