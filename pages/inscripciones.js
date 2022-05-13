@@ -36,6 +36,11 @@ const Inscripcion = () => {
   };
   return (
     <div className={styles.container}>
+      <p>Las inscripciones para este ciclo ya se cerraron.</p>
+    </div>
+  );
+  return (
+    <div className={styles.container}>
       <h1>Inscríbete!</h1>
       {serverResponse ? (
         <>

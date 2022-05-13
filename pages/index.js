@@ -42,21 +42,6 @@ export default function Home() {
             La siguiente despega el 18 de mayo. Inscríbete antes de que se
             acaben los cupos!
           </p>
-          <a
-            className={styles.inscripcionBtn}
-            target='_blank'
-            style={{ backgroundColor: 'lightgreen' }}
-            href='https://wa.link/7sno14'
-            rel='noreferrer'
-          >
-            Escríbeme al whatsapp
-          </a>
-          <br />
-          <div style={{ marginTop: '20px' }}>
-            <Link href='/inscripciones'>
-              <a className={styles.inscripcionBtn}>Inscribirme</a>
-            </Link>
-          </div>
         </div>
       </div>
 
