@@ -14,10 +14,15 @@ export async function getStaticProps({ params }) {
 }
 
 const Alumnos = ({ alumnos }) => {
+  const downloadCsv = () => {
+    console.log('inside here!');
+    const emails = alumnos.map(x => x.email).join('\n');
+    console.log('the emails are', emails);
+  };
+
   return (
     <div>
       <div className={styles.alumnos}>
-        {' '}
         {alumnos.map((alumno, index) => {
           return (
             <div key={alumno._id} className={styles.alumnoContainer}>
@@ -29,6 +34,7 @@ const Alumnos = ({ alumnos }) => {
           );
         })}
       </div>
+      <button onClick={downloadCsv}>click!</button>
     </div>
   );
 };

@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </div>
 
-      <NavBottom />
+      {/* <NavBottom /> */}
     </div>
   );
 }

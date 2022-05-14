@@ -9,8 +9,9 @@ const Inscripcion = () => {
   const [loading, setLoading] = useState(false);
   const [serverResponse, setServerResponse] = useState('');
   const handleFormSubmit = async e => {
-    setLoading(true);
+    // setLoading(true);
     e.preventDefault();
+    alert('Lo lamento, pero las inscripciones ya se cerraron.');
     const reqParams = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
