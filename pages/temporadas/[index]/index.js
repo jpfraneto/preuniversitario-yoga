@@ -38,7 +38,7 @@ const TemporadaIndex = ({ alumnos }) => {
       </Link>
       {alumnos.map(x => {
         return (
-          <Link href={`/u/${x._id}`}>
+          <Link key={x._id} href={`/u/${x._id}`}>
             <a className={styles.alumnoLink}>{x.nombre}</a>
           </Link>
         );

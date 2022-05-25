@@ -22,7 +22,7 @@ export default function Home() {
       </section>
       <div className={styles.container}>
         {seasons.map(x => (
-          <SeasonCard seasonInfo={x} />
+          <SeasonCard key={seasonInfo.season} seasonInfo={x} />
         ))}
       </div>
     </div>

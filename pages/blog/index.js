@@ -14,8 +14,8 @@ const Blog = ({ posts }) => {
     <div>
       Acá va el blog
       {posts &&
-        posts.map(x => (
-          <Link href={`/blog${x.url}`}>
+        posts.map((x, index) => (
+          <Link key={index} href={`/blog${x.url}`}>
             <a>{x.title}</a>
           </Link>
         ))}

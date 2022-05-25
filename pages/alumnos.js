@@ -6,7 +6,6 @@ import Alumno from '../components/Alumno';
 export async function getStaticProps({ params }) {
   const { db } = await connectToDatabase();
   const alumnos = await db.collection('alumnos').find({}).toArray();
-  console.log(alumnos);
   return {
     props: {
       // alumnos: JSON.stringify(JSON.parse(alumnos)),
@@ -20,7 +19,7 @@ const Alumnos = ({ alumnos }) => {
     <div>
       <div className={styles.alumnos}>
         {alumnos.map((alumno, index) => {
-          return <Alumno alumno={alumno} />;
+          return <Alumno key={alumno._id} alumno={alumno} />;
         })}
       </div>
     </div>
