@@ -6,7 +6,7 @@ import styles from '../../../styles/Temporadas.module.css';
 
 export async function getStaticPaths() {
   return {
-    paths: [{ params: { index: '1' } }, { params: { index: '2' } }],
+    paths: [{ params: { index: '1' } }],
     fallback: true,
   };
 }
