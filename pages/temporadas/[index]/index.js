@@ -19,7 +19,6 @@ export async function getStaticProps({ params }) {
     .toArray();
   return {
     props: {
-      // alumnos: JSON.stringify(JSON.parse(alumnos)),
       alumnos: JSON.parse(JSON.stringify(alumnos)),
     },
   };
