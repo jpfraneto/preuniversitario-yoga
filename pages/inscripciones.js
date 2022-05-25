@@ -57,6 +57,13 @@ const Inscripcion = () => {
               onSubmit={handleFormSubmit}
               className={styles.inscripcionForm}
             >
+              Por ahora las inscripciones están cerradas
+            </form>
+          ) : (
+            /* <form
+              onSubmit={handleFormSubmit}
+              className={styles.inscripcionForm}
+            >
               <div>
                 <label>Nombre Completo:</label>
                 <input
@@ -152,8 +159,7 @@ const Inscripcion = () => {
               </div>
 
               <button type='submit'>Enviar Inscripción</button>
-            </form>
-          ) : (
+            </form> */
             <p>Enviando tu información...</p>
           )}
         </>

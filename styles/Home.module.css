@@ -28,3 +28,8 @@
 .inscripcionBtn:hover {
   filter: brightness(85%);
 }
+
+.firstSection {
+  height: calc(100vh - 50px);
+  text-align: center;
+}

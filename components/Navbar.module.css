@@ -4,6 +4,10 @@
   height: 58px;
   border-bottom: 1px solid black;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
 }
 
 .navContainer h1 {
@@ -30,4 +34,26 @@
   background-color: var(--three);
   border-bottom: 2px solid black;
   font-size: 0.7rem;
+}
+
+.btn {
+  margin: 0 2px;
+  padding: 4px 8px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(72%);
+  color: grey;
+}
+
+.buttonsContainer > * {
+  margin: 0 8px;
+}
+
+.buttonsContainer > *:hover {
+  color: grey;
 }

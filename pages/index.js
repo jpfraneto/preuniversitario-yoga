@@ -2,9 +2,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import NavBottom from '../components/NavBottom';
+import SeasonCard from '../components/SeasonCard';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  const seasons = [{ season: 1, alumnos: Array.from(Array(49).keys()) }];
   return (
     <div>
       <Head>
@@ -15,34 +17,14 @@ export default function Home() {
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <section className={styles.firstSection}>
+        <h2>Primer Ciclo de 21 días En Curso!</h2>
+      </section>
       <div className={styles.container}>
-        <div>
-          <h5>¿Estás estresad@?</h5>
-          <h5>¿No tienes claro qué estudiar?</h5>
-          <h5>¿Sientes ansiedad por la PTU y la PAES?</h5>
-          <p>Las respuestas están adentro de ti.</p>
-        </div>
-        <div className={styles.contentText}>
-          <p>
-            Únete a una red de alumnos de todo Chile que están en la misma
-            situación que tú. Juntos podemos salir adelante.
-          </p>
-          <p>
-            Cada <span>nave</span> es un viaje de 21 días en conjunto para
-            ayudarnos a encontrar la claridad necesaria para avanzar de buena
-            forma.
-          </p>
-          <p>Ocuparemos las herramientas que el yoga nos entrega para:</p>
-          <ul>
-            <li>Manejar la ansiedad.</li>
-            <li>Reducir el estrés.</li>
-            <li>Aumentar la claridad mental.</li>
-          </ul>
-          <p>La siguiente despega el 18 de mayo.</p>
-        </div>
+        {seasons.map(x => (
+          <SeasonCard seasonInfo={x} />
+        ))}
       </div>
-
-      {/* <NavBottom /> */}
     </div>
   );
 }

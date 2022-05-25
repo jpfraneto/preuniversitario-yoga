@@ -1,3 +1,4 @@
+import { SessionProvider } from 'next-auth/react';
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import '../styles/globals.css';
@@ -11,8 +12,10 @@ function MyApp({ Component, pageProps }) {
           universidad
         </title>
       </Head>
-      <Navbar />
-      <Component {...pageProps} />
+      <SessionProvider>
+        <Navbar />
+        <Component {...pageProps} />
+      </SessionProvider>
     </>
   );
 }
